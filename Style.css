@@ -1,0 +1,102 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eae2fc;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Загальний стиль для контейнера */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+}
+h2 {
+    margin-bottom: 22px;
+}
+/* Стиль для текстових полів */
+input[type="text"], input[type="email"], .aspNetTextBox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+input[type="number"] {
+    width: 50px;
+    font-size: 27px;
+}
+input[type=date]{
+    font-size: 20px;
+}
+/* Стиль для кнопок */
+input[type="submit"], input[type="button"], .aspNetButton {
+    padding: 15px 30px; 
+    margin: 20px 0; 
+    background-color: #004a99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Стиль для радіокнопок та чекбоксів */
+input[type="radio"], input[type="checkbox"], .aspNetRadioButton, .aspNetCheckBox {
+    margin-right: 10px;
+}
+
+/* Стиль для випадаючих списків */
+select, .aspNetDropDown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* Стиль для таблиць */
+table, .aspNetTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td, th, .aspNetTableCell, .aspNetTableHeader {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Стиль для літералів та міток */
+label, .aspNetLiteral, .aspNetLabel{
+    font-size: 20px;
+    color: #333;
+}
+
+.input-field, select, .aspNetDropDown, .aspNetTextBox {
+    padding: 15px; /* Збільшено з 10px */
+    margin: 15px 0; /* Збільшено відступ між елементами */
+}
+
+.photoUpload{
+    margin-bottom: 20px;
+}
+
+#ProfileImage {
+    float: right;
+    width: auto;
+    height: 240px;
+    margin: 0 10%;
+    border: 1px solid #ddd;
+    order: 2; /* переміщуємо зображення в кінець флекс-контейнера */
+}

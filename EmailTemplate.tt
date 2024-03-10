@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      /* Основні стилі, які вже існують */
+        body { font-family: Arial, sans-serif; }
+        .container { background-color: #f7f7f7; padding: 20px; }
+        .header { background-color: #004a99; color: white; padding: 10px; text-align: center; }
+        .content { margin-top: 20px;}
+        .footer { margin-top: 20px; font-size: 0.8em; text-align: center; color: #777; }
+        .ticket-info { background-color: #e7e7e7; padding: 15px; }
+        .ticket-info p { margin: 5px 0; }
+
+        /* Оновлені стилі */
+        .ticket-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .ticket-info img {
+            width: auto;
+            height: 240px;
+            margin: 0 10%;
+            border: 1px solid #ddd;
+            order: 2; /* переміщуємо зображення в кінець флекс-контейнера */
+        }
+
+        .ticket-details {
+            order: 1; /* елементи з інформацією про квиток йдуть першими */
+            flex-grow: 1;
+        }
+
+        /* Додаткові стилі, які можуть знадобитися */
+        .null-value { color: #999; }
+        p[isreturnticket="Ні"] { display: none; }
+        p[classtype="Бізнес"] { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Авіаквиток</h1>
+        </div>
+        <div class="content">
+            <div class="ticket-info">
+                <div class="ticket-details">
+                    <p><strong>Прізвище / Ім'я: </strong>$name$</p>
+                    <p><strong>Місто відправлення:</strong> $departureCity$</p>
+                    <p><strong>Місто прибуття:</strong> $arrivalCity$</p>
+                    <p><strong>Рейс в дві сторони:</strong> $isReturnTicket$</p>
+                    <p><strong>Дата вильоту:</strong> $flightDate$</p>
+                    <p isreturnticket="$isReturnTicket$"><strong>Дата повернення:</strong> $returnDate$</p>
+                    <p><strong>Клас:</strong> $classType$</p>
+                    <p classtype="$classType$"><strong>Вік пасажира:</strong> $isAdult$</p>
+                    <p classtype="$classType$"><strong>Наявність багажу:</strong> $luggage$</p>
+                    <p><strong>Супроводжуючі дорослі:</strong> $accompanyingAdult$</p>
+                    <p><strong>Супроводжуючі діти:</strong> $accompanyingChild$</p>
+                    <p><strong>Ціна:</strong> $price$</p>
+                </div>
+                <img src="$photoUrl$" alt="Passenger's Photo" />
+            </div>
+        </div>
+        <div class="footer">
+            <p>Дякуємо, що обираєте нас</p>
+        </div>
+    </div>
+</body>
+</html>

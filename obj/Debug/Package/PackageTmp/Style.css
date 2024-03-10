@@ -1,0 +1,39 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eae2fc;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.input-field, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
